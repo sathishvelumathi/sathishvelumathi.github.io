@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="nav">
+            <div class="left">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="internship.html">Internship</a>
+                </div>
+
+                <div class="nav-link">
+                    <div class="nav-link active-nav-link">
+                     <a href="workshop.html">Workshops</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="nav-logo">
+                    <div>SATHISH V</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="workshop-grid">
+        <div class="workshop-contents">
+            <div class="workshop-content">
+                <div class="workshop-background" style="background-image:url(images/Floating.jpg)"></div>
+
+                <div class="workshop-text">
+                    <div class="logo">
+                        <a href="floating-pavilion.html">
+                            <img src = "images/Floating.png" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="workshop-link">
+                        <a href="floating-pavilion.html"><h2>Floating Pavilion<h2></a>
+                    </div>
+                    <div class="abstract">
+                        <p>VIT Vertical workshop    |  Ar Jaffer AA Khan</p>
+                        <p>2016</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workshop-content">
+                <div class="workshop-background" style="background-image:url(images/bamboo.jpg)"></div>
+
+                <div class="workshop-text">
+                    <div class="logo">
+                        <a href="bamboo-workshop.html">
+                            <img src = "images/bamboo.png" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="workshop-link">
+                        <a href="bamboo-workshop.html"><h2>Bamboo Workshop</h2></a>
+                    </div>
+                    <div class="abstract">
+                        <p>Bamboo Fractile workshop |   Ar Jaffer AA Khan</p>
+                        <p>2017</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workshop-content">
+                <div class="workshop-background" style="background-image:url(images/Carpentry.jpg)"></div>
+
+                <div class="workshop-text">
+                    <div class="logo">
+                        <a href="carpentry-workshop.html">
+                        <img src = "images/Carpentry.png" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="workshop-link">
+                        <a href="carpentry-workshop.html"><h2>Carpentry Workshop</h2></a>
+                    </div>
+                    <div class="abstract">
+                        <p>Urban Garage workshop    |   Ar Durganand Balsavar</p>
+                        <p>2017</p>
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-contents">
+    
+                <div class="footer-content">
+                    <a href="mailto:sathishv2511@gmail.com" target="popup">
+                        <img src="footer/1.png" style="height:20px;width:20px;">
+                    </a>
+                </div>
+    
+                <div class="footer-content">
+                    <a href="https://www.instagram.com/sathish_karthikeyan/" target="popup">
+                        <img src="footer/2.png" style="height:20px;width:20px;">
+                     </a>
+                </div>
+        
+                <div class="footer-content">
+                    <a href="https://github.com/Sathish-V2511" target="popup">
+                        <img src="footer/4.png" style="height:20px;width:20px;">
+                     </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+<script>
+    const workshopcontents = document.querySelectorAll('.workshop-content');
+    workshopcontents.forEach(workshopcontent => {
+    workshopcontent.addEventListener('mouseover', () => {
+      console.log(workshopcontent.childNodes[1].classList)
+      workshopcontent.childNodes[1].classList.add('darkening');
+    });
+
+    workshopcontent.addEventListener('mouseout', () => {
+      console.log(workshopcontent.childNodes[1].classList)
+      workshopcontent.childNodes[1].classList.remove('darkening');
+    });
+  });
+</script>
+</html>
