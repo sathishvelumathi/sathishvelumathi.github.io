@@ -207,8 +207,6 @@ grid-area: wrapper;
   
   .slidebar1-text {
     position: absolute;
-    bottom: 5%;
-    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -251,13 +249,6 @@ grid-area: wrapper;
   .slidebarabstract:hover::after{
     width: 100%;
   }*/
-
-  @media screen and (max-width: 900px) {
-    .slidebar1 {
-      width: 100%;
-      display: block;
-    }
-  }
 
 /* floating Pavilion styles*/
 
