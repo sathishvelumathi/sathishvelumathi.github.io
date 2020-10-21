@@ -31,14 +31,94 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="internship-grid">
+            <div class="workshop-grid">
                 <div class="internship-contents">
-    
+                    <div class="workshop-content">
+                        <div class="workshop-background" style="background-image:url(images/icg.jpg)"></div>
+
+                        <div class="workshop-text">
+                            <div class="logo">
+                                <a href="icg.html">
+                                    <img src = "images/icg.png" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="workshop-link">
+                                <a href="icg.html"><h2>Hostel Accomodation</h2></a>
+                            </div>
+                            <div class="abstract">
+                                <p>Officers Training Academy, Chennai</p>
+                                <p>2019</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workshop-content">
+                        <div class="workshop-background" style="background-image:url(images/gcv.jpg)"></div>
+
+                        <div class="workshop-text">
+                            <div class="logo">
+                                <a href="gcv.html">
+                                    <img src = "images/gcv.png" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="workshop-link">
+                                <a href="gcv.html"><h2>Business Hub<h2></a>
+                            </div>
+                            <div class="abstract">
+                                <p>Velachery, Chennai</p>
+                                <p>2019</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workshop-content">
+                        <div class="workshop-background" style="background-image:url(images/ziv.jpg)"></div>
+
+                        <div class="workshop-text">
+                            <div class="logo">
+                                <a href="ziv.html">
+                                <img src = "images/ziv.png" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="workshop-link">
+                                <a href="ziv.html"><h2>Auditorium</h2></a>
+                            </div>
+                            <div class="abstract">
+                                <p>Estancia Township, Guduvanchery, Chennai</p>
+                                <p>2018</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div class="footer-contents">
+                <div class="footer-content">
+                    <a href="https://www.ksmindia.com/" target="popup">
+                        <img src="footer/ksm.png" style="height:50px;">
+                     </a>
+                </div>
+            </div>
+            
+        </div>        
 
     </div>
 </body>
+
+<script>
+    const workshopcontents = document.querySelectorAll('.workshop-content');
+    workshopcontents.forEach(workshopcontent => {
+    workshopcontent.addEventListener('mouseover', () => {
+      console.log(workshopcontent.childNodes[1].classList)
+      workshopcontent.childNodes[1].classList.add('darkening');
+    });
+
+    workshopcontent.addEventListener('mouseout', () => {
+      console.log(workshopcontent.childNodes[1].classList)
+      workshopcontent.childNodes[1].classList.remove('darkening');
+    });
+  });
+</script>
 
 </html>
