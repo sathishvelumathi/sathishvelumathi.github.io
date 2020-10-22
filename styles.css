@@ -224,27 +224,28 @@ grid-area: wrapper;
   }
   
   .slidebar1-text {
-    position: absolute;
+    padding: 30px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 350px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     text-align: justify;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
-    margin: 30px;
+  }
+
+  /* .slidebar1-text {
     color: white; 
     background-image: linear-gradient(to right, transparent 40%,rgba(70,70,70,0.90));
     background-size: 200%;
     transition: 0.5s;
   }
-
   .slidebar1-text:hover {
     background-position: 100%;
     background-image: linear-gradient(to right, transparent 40%,rgba(70,70,70,0.90));
-  }
+  } */
 
   /*.slidebarabstract::after{
     content:'';
