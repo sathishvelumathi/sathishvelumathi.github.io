@@ -247,7 +247,6 @@ grid-area: wrapper;
 
   .bamboo-gallery {
     margin: 30px;
-    width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
