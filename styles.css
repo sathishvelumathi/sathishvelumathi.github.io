@@ -118,6 +118,7 @@ grid-area: wrapper;
 
 .workshop-content{
   position: relative;
+  line-height: 150%;
 }
 
 .workshop-background {
