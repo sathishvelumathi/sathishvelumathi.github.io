@@ -302,9 +302,9 @@ grid-area: wrapper;
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: transparent;
   margin: auto;
-  width: 70%;
+  width: auto;
   max-width: 1200px;
 }
 
