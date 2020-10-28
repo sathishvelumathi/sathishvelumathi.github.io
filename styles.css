@@ -339,7 +339,7 @@ grid-area: wrapper;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: #707070;
+  color: white;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
@@ -394,7 +394,7 @@ img.hover-shadow {
   margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 150px;
   grid-gap: 10px; 
 }
 
