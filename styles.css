@@ -90,8 +90,7 @@ grid-area: wrapper;
 
 /* Internship styles*/
 .internship-contents{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px; 
@@ -100,8 +99,7 @@ grid-area: wrapper;
 /* Projects styles*/
 
 .project-contents{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -111,8 +109,7 @@ grid-area: wrapper;
 /* Workshop styles*/
 
 .workshop-contents{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
