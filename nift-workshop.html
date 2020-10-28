@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
 <head>
     <meta charset="utf-8" />
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
+  <div class="container">
+    <div class="nav">
             <div class="left">
                 <div class="nav-link">
                     <a href="index.html">Sathish V</a>
@@ -28,14 +28,14 @@
                 </div>
 
             </div>
-        </div>
-        <div class="wrapper">
-            <div class="bamboo-grid">
-                <div class="slidebar1">
-                    <div class="background-1">
+    </div>
+    <div class="wrapper">
+      <div class="bamboo-grid">
+        <div class="slidebar1">
+          <div class="background-1">
                         <img src = "images/nift.gif" style="width:100%; height:auto;">
-                    </div>
-                   <div class="slidebar1-text">
+          </div>
+          <div class="slidebar1-text">
                             <h2>Scrap Metal Art</h2>
                             <p>The building marathon featured the culmination
                                 of an engaging process of creative architectural
@@ -44,10 +44,10 @@
                                 4 days being hands on sessions building up the
                                 real scale bamboo evolution.</p>
                             <p>NIFT, Chennai   |   Bhaskar Jyoti Borgohain</p>
-                        </div>
-                    </div> 
+          </div>
+        </div> 
 
-                    <div class="nift-gallery">
+        <div class="nift-gallery">
                         <div class="bamboo-photo">
                             <img src="images/n1.jpg" onclick="openModal();currentSlide(1)" style="width: 100%;" class="hover-shadow">
                         </div>
@@ -93,60 +93,60 @@
                         <div class="bamboo-photo">
                             <img src="images/n15.jpg" onclick="openModal();currentSlide(15)" style="width: 100%;" class="hover-shadow">
                         </div>
-                    </div>
+        </div>
 
-                    <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
                         <span class="close cursor" onclick="closeModal()">&times;</span>
                         <div class="modal-content">
                       
                           <div class="mySlides">
                             <div class="numbertext">1 / 15</div>
-                            <img src="images/n1.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n1.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">2 / 15</div>
-                            <img src="images/n2.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n2.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">3 / 15</div>
-                            <img src="images/n3.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n3.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">4 / 15</div>
-                            <img src="images/n4.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n4.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
 
                           <div class="mySlides">
                             <div class="numbertext">5 / 15</div>
-                            <img src="images/n5.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n5.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">6 / 15</div>
-                            <img src="images/n6.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n6.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">7 / 15</div>
-                            <img src="images/n7.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n7.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">8 / 15</div>
-                            <img src="images/n8.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n8.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
 
                           <div class="mySlides">
                             <div class="numbertext">9 / 15</div>
-                            <img src="images/n9.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n9.jpg" style="height: 733px; margin: 0 250px 0;">
                           </div>
                       
                           <div class="mySlides">
                             <div class="numbertext">10 / 15</div>
-                            <img src="images/n10.jpg" style="height: 800px; margin: 0 300px 0 300px;">
+                            <img src="images/n10.jpg" style="height: 733px; margin: 0 250px 0 ;">
                           </div>
 
                           <div class="mySlides">
@@ -178,11 +178,15 @@
                           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                           <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                      </div>
-                </div>
-            </div>    
         </div>
+      </div>
     </div>
+    <div class="top">
+      <a href="#top">
+        <img src="footer/5.png" style="height: 30px; width: 30px; padding-bottom: 30px;">
+      </a>
+    </div>
+  </div>
 
 </body>
 
@@ -226,6 +230,7 @@
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
   </script>
 
 </html>
