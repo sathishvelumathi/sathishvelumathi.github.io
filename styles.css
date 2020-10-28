@@ -213,8 +213,7 @@ grid-area: wrapper;
 /* Bamboo Pavilion styles*/
   
   .slidebar1 {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 30px 30px 0 30px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -249,8 +248,18 @@ grid-area: wrapper;
     justify-content: center; 
   }*/
 
+  .gallerytag {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+
   .bamboo-gallery {
-    margin: 30px;
+    margin: 0 30px 30px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -395,7 +404,7 @@ img.hover-shadow {
 /* nift gallery styles */
 
 .nift-gallery {
-  margin: 30px;
+  margin: 0 30px 30px 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 150px;
