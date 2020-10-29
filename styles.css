@@ -93,10 +93,6 @@ grid-area: wrapper;
 
 /* thesis styles */
 .proposalcontainer {
-  /* margin: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;  */
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -107,9 +103,9 @@ grid-area: wrapper;
 
 .proposalcontainer .box {
   position: relative;
-  width: 300px;
-  height: 400px;
-  margin: 40px;
+  width: 340px;
+  height: 420px;
+  margin: 30px;
   background: #f2f2f2;
   border-radius: 20px;
   transform-style: preserve-3d;
@@ -207,10 +203,6 @@ opacity: 0.2;
   position: absolute;
   top: 50%;
   left: 50%;
-  /* width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: white; */
   transition: 0.5s;
   transform-style: preserve-3d;
   z-index: 10;
@@ -234,11 +226,6 @@ opacity: 0.2;
   transform: translate3d(-50%,-50%,100px);
   opacity: 1;
 }
-
-/* .proposalcontainer .box:nth-child(1) .circle,
-.proposalcontainer .box:nth-child(1) .buy {
-  background: #707070;
-} */
 
 /* Internship styles*/
 .internship-contents{
@@ -386,6 +373,11 @@ opacity: 0.2;
     align-content: center;
     align-items: center;
     text-align: justify;
+  }
+
+  .slidebar1-text h2,
+  .slidebar1-text h4{
+    text-align: center;
   }
 
   /* .bamboo-gallery {
