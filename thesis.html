@@ -30,8 +30,34 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="bamboo-grid">
-                <div class="slidebar1">
+
+          <div class="bamboo-grid">
+
+            <div class="proposalcontainer">
+              <div class="box">
+                <h3 class="name">Paalam</h3>
+                <a href="#" class="buy">view</a>
+                <div class="circle"> <img src="images/c1.png" style="max-width: 300px;"></div>
+                <img src="footer/1.png" style="width: 90px; height: 90px;" class="product">
+              </div>
+  
+              <div class="box">
+                <h3 class="name">Kambipadu</h3>
+                <a href="#" class="buy">view</a>
+                <div class="circle"><img src="images/p1.png" style="max-width: 300px;"></div>
+                <img src="footer/2.png" style="width: 90px; height: 90px;" class="product">
+              </div>
+  
+              <div class="box">
+                <h3 class="name">Aaru</h3>
+                <a href="#" class="buy">view</a>
+                <div class="circle"><img src="images/c3.png" style="max-width: 300px;"></div>
+                <img src="footer/3.png" style="width: 90px; height: 90px;" class="product">
+              </div>
+  
+            </div>
+
+            <div class="slidebar1">
                     <div class="background-1">
                         <img src = "images/kambipadu.gif" style="width:100%; height:auto;">
                     </div>
@@ -47,13 +73,13 @@
                         </p>
                         <p>Thesis Project   |   Ar.R.M.Valliappan</p>
                     </div>
-                </div> 
+            </div> 
                     
-                <div class="gallerytag">
+            <div class="gallerytag">
                       <h4>Gallery</h4>
-                </div>
+            </div>
 
-                <div class="bamboo-gallery">
+            <div class="bamboo-gallery">
                         <div class="bamboo-photo">
                             <img src="images/b1.jpg" onclick="openModal();currentSlide(1)" style="width: 100%;" class="hover-shadow">
                         </div>
@@ -84,9 +110,9 @@
                         <div class="bamboo-photo">
                             <img src="images/b10.jpg" onclick="openModal();currentSlide(10)" style="width: 100%;" class="hover-shadow">
                         </div>
-                </div>
+            </div>
 
-                <div id="myModal" class="modal">
+            <div id="myModal" class="modal">
                         <span class="close cursor" onclick="closeModal()">&times;</span>
                         <div class="modal-content">
                       
@@ -144,8 +170,9 @@
                           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                           <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                </div>
-                <div class="slidebar1">
+            </div>
+
+            <div class="slidebar1">
                     <div class="background-1">
                         <img src = "images/parking.gif" style="width:100%; height:auto;">
                 </div>
@@ -161,8 +188,9 @@
                         </p>
                         <p>Thesis Project   |   Ar.R.M.Valliappan</p>
                 </div>
-                </div>
-                <div class="slidebar1">
+            </div>
+
+            <div class="slidebar1">
                     <div class="background-1">
                         <img src = "images/rest.gif" style="width:100%; height:auto;">
                 </div>
@@ -178,8 +206,34 @@
                         </p>
                         <p>Thesis Project   |   Ar.R.M.Valliappan</p>
                 </div>
+            </div>
+
+            <div class="proposalcontainer">
+                <div class="box">
+                  <h3 class="name">Entrance Complex</h3>
+                  <a href="#" class="buy">view</a>
+                  <div class="circle"> <img src="images/p1.png" style="max-width: 300px;"></div>
+                  <img src="footer/1.png" style="width: 90px; height: 90px;" class="product">
                 </div>
-            </div> 
+
+                <div class="box">
+                  <h3 class="name">Vibishan Temple Complex</h3>
+                  <a href="#" class="buy">view</a>
+                  <div class="circle"><img src="images/p1.png" style="max-width: 300px;"></div>
+                  <img src="footer/2.png" style="width: 90px; height: 90px;" class="product">
+                </div>
+
+                <div class="box">
+                  <h3 class="name">Kambipadu Complex</h3>
+                  <a href="#" class="buy">view</a>
+                  <div class="circle"><img src="images/p1.png" style="max-width: 300px;"></div>
+                  <img src="footer/3.png" style="width: 90px; height: 90px;" class="product">
+                </div>
+
+            </div>
+
+          </div> 
+
         </div>
 
         <div class="top">
@@ -191,7 +245,15 @@
     </div>
 </body>
 
+<script src="vanilla-tilt.min.js"></script>
+
 <script>
+
+  VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+  });
+
   // Open the Modal
   function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -231,6 +293,7 @@
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
-  </script>
+
+</script>
 
 </html>

@@ -91,6 +91,155 @@ grid-area: wrapper;
   filter: grayscale(50%);
 }
 
+/* thesis styles */
+.proposalcontainer {
+  /* margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;  */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.proposalcontainer .box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transition: 0.1s;
+}
+
+.proposalcontainer .box:hover {
+  background: #707070;
+  transition: 0.1s;
+}
+
+.proposalcontainer .box::before {
+  content: 'Proposal';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3.5em;
+  font-weight: 800;
+  color: white;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.proposalcontainer .box::after {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: white;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.proposalcontainer .box:nth-child(1)::after {
+  content: '1';
+}
+
+.proposalcontainer .box:nth-child(2)::after {
+  content: '2';
+}
+
+.proposalcontainer .box:nth-child(3)::after {
+  content: '3';
+}
+
+.proposalcontainer .box:hover::before,
+.proposalcontainer .box:hover::after {
+opacity: 0.2;
+}
+
+.proposalcontainer .box .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.proposalcontainer .box:hover .name {
+  bottom: 80px;
+  opacity: 1;
+}
+
+.proposalcontainer .box .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: white;
+  background: #333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.proposalcontainer .box:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.proposalcontainer .box .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: white; */
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%,-50%,50px);
+}
+
+.proposalcontainer .box .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,0px);
+  opacity: 0;
+}
+
+.proposalcontainer .box:hover .product {
+  transform: translate3d(-50%,-50%,100px);
+  opacity: 1;
+}
+
+/* .proposalcontainer .box:nth-child(1) .circle,
+.proposalcontainer .box:nth-child(1) .buy {
+  background: #707070;
+} */
+
 /* Internship styles*/
 .internship-contents{
   margin: 30px;
