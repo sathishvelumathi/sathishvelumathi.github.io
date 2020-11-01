@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -96,97 +98,18 @@
           <h4>Gallery</h4>
         </div>
         <div class="bamboo-gallery">
-                        <div class="bamboo-photo">
-                            <img src="images/g1.jpg" onclick="openModal();currentSlide(1)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g2.jpg" onclick="openModal();currentSlide(2)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g3.jpg" onclick="openModal();currentSlide(3)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g4.jpg" onclick="openModal();currentSlide(4)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g5.jpg" onclick="openModal();currentSlide(5)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g6.jpg" onclick="openModal();currentSlide(6)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g7.jpg" onclick="openModal();currentSlide(7)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g8.jpg" onclick="openModal();currentSlide(8)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g9.jpg" onclick="openModal();currentSlide(9)" style="width: 100%;" class="hover-shadow">
-                        </div>
-                        <div class="bamboo-photo">
-                            <img src="images/g10.jpg" onclick="openModal();currentSlide(10)" style="width: 100%;" class="hover-shadow">
-                        </div>
+          <a href="images/g1.jpg" data-lightbox="mygallery"><img src="images/g1.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g2.jpg" data-lightbox="mygallery"><img src="images/g2.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g3.jpg" data-lightbox="mygallery"><img src="images/g3.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g4.jpg" data-lightbox="mygallery"><img src="images/g4.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g5.jpg" data-lightbox="mygallery"><img src="images/g5.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g6.jpg" data-lightbox="mygallery"><img src="images/g6.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g7.jpg" data-lightbox="mygallery"><img src="images/g7.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g8.jpg" data-lightbox="mygallery"><img src="images/g8.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g9.jpg" data-lightbox="mygallery"><img src="images/g9.jpg" style="width: 100%;" class="hover-shadow"></a>
+          <a href="images/g10.jpg" data-lightbox="mygallery"><img src="images/g10.jpg" style="width: 100%;" class="hover-shadow"></a>
         </div>
 
-        <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">1 / 10</div>
-                            <img src="images/g1.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">2 / 10</div>
-                            <img src="images/g2.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">3 / 10</div>
-                            <img src="images/g3.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">4 / 10</div>
-                            <img src="images/g4.jpg" style="width:100%">
-                          </div>
-
-                          <div class="mySlides">
-                            <div class="numbertext">5 / 10</div>
-                            <img src="images/g5.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">6 / 10</div>
-                            <img src="images/g6.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">7 / 10</div>
-                            <img src="images/g7.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">8 / 10</div>
-                            <img src="images/g8.jpg" style="width:100%">
-                          </div>
-
-                          <div class="mySlides">
-                            <div class="numbertext">9 / 10</div>
-                            <img src="images/g9.jpg" style="width:100%">
-                          </div>
-                      
-                          <div class="mySlides">
-                            <div class="numbertext">10 / 10</div>
-                            <img src="images/g10.jpg" style="width:100%">
-                          </div>
-                      
-                          <!-- Next/previous controls -->
-                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-        </div>
       </div>
     </div>
     <div class="top">
