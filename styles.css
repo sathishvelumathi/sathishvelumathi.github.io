@@ -565,6 +565,14 @@ img.hover-shadow {
   cursor: pointer;
 }
 
+.ziv-gallery {
+  margin: 0 30px 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px; 
+  cursor: pointer;
+}
+
 /* floating Pavilion styles*/
 
 .floating-grid {

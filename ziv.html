@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+            <div class="left">
+                <div class="nav-link">
+                    <a href="index.html">Sathish V</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div class="nav-link">
+                    <div class="nav-link active-nav-link">
+                        <a href="internship.html">Internship</a>
+                    </div>
+                </div>
+
+                <div class="nav-link">
+                    <a href="workshop.html">Workshops</a>
+                </div>
+
+            </div>
+    </div>
+    <div class="wrapper">
+      <div class="bamboo-grid">
+            <div class="slidebar1">
+            <div class="background-1">
+                <img src = "images/ziv.gif" style="width:750px;">
+            </div>
+            <div class="slidebar1-text">
+                    <h2>Auditorium</h2>
+                    <p>The building marathon featured the culmination
+                        of an engaging process of creative architectural
+                        bamboo evolution incorporating fractile theory.
+                        The workshop went on for 9 days with the last
+                        4 days being hands on sessions building up the
+                        real scale bamboo evolution.
+                    </p>
+                    <h4>Estancia Township, Guduvanchery, Chennai   |   Ar. Sriram Ganapathy</h4>
+            </div>
+            </div> 
+    
+            <div class="gallerytag">
+            <h4>Gallery</h4>
+            </div>
+            <div class="ziv-gallery">
+                <div class="bamboo-photo">
+                    <img src="images/z1.jpg" onclick="openModal();currentSlide(1)" style="width: 100%;" class="hover-shadow">
+                </div>
+                <div class="bamboo-photo">
+                    <img src="images/z2.jpg" onclick="openModal();currentSlide(2)" style="width: 100%;" class="hover-shadow">
+                </div>
+                <div class="bamboo-photo">
+                    <img src="images/z3.jpg" onclick="openModal();currentSlide(3)" style="width: 100%;" class="hover-shadow">
+                </div>
+                <div class="bamboo-photo">
+                    <img src="images/z4.jpg" onclick="openModal();currentSlide(4)" style="width: 100%;" class="hover-shadow">
+                </div>
+                <div class="bamboo-photo">
+                    <img src="images/z5.jpg" onclick="openModal();currentSlide(5)" style="width: 100%;" class="hover-shadow">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                        
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/z1.jpg" style="width:100%">
+                    </div>
+                        
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/z2.jpg" style="width:100%">
+                    </div>
+                        
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/z3.jpg" style="width:100%">
+                    </div>
+                        
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/z4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/z5.jpg" style="width:100%">
+                    </div>
+                        
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="top">
+      <a href="#top">
+        <img src="footer/5.png" style="height: 30px; width: 30px; padding-bottom: 30px;">
+      </a>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+  </script>
+
+</html>
