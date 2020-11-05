@@ -589,6 +589,10 @@ img.hover-shadow {
     justify-content: center;
   }
 
+  .footer-contents h4{
+    color: #707070;
+  }
+
   .footer-content {
     color: #707070;
     padding-right: 30px;
