@@ -387,6 +387,10 @@ opacity: 0.2;
     text-align: center;
   }
 
+  .group p {
+    text-align: center;
+  }
+
   .slidebar1-text p {
     color: #707070;  
   } 
