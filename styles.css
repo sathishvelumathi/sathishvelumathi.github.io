@@ -104,9 +104,16 @@ grid-area: wrapper;
 .about-contents {
   margin: 30px;
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  align-content: center;
+  text-align: left;
+}
+
+.profile {
+  margin: 0 0 0 30px;
 }
 
 .homegif {
@@ -116,6 +123,10 @@ grid-area: wrapper;
   align-content: center;
   align-items: center;
 }
+
+/* .education p {
+  text-indent: 10px;
+} */
 
 /* .profile-image {
   filter: grayscale(50%);
@@ -628,7 +639,7 @@ img.hover-shadow {
 
   .footer-content {
     color: #707070;
-    padding-right: 30px;
+    padding: 0 15px 0 15px;
     filter: opacity(50%);
   }
 
