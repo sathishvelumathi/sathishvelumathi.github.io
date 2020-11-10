@@ -114,6 +114,12 @@ grid-area: wrapper;
 
 .profile {
   margin: 0 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .homegif {
@@ -252,7 +258,7 @@ opacity: 0.2;
   transform: translate3d(-50%,-50%,50px);
 }
 
-.proposalcontainer .box .product {
+/* .proposalcontainer .box .product {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -267,7 +273,7 @@ opacity: 0.2;
 .proposalcontainer .box:hover .product {
   transform: translate3d(-50%,-50%,100px);
   opacity: 1;
-}
+} */
 
 /* Internship styles*/
 .internship-contents{
