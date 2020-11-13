@@ -147,6 +147,7 @@ grid-area: wrapper;
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
+  padding: 50px 0 0 0;
 }
 
 .proposalcontainer .box {
@@ -274,6 +275,83 @@ opacity: 0.2;
   transform: translate3d(-50%,-50%,100px);
   opacity: 1;
 } */
+
+/* Katpadi styles */
+.proposalcontainer .map {
+  position: relative;
+}
+
+.proposalcontainer .map .face {
+  width: 300px;
+  height: 175px;
+  transition: 0.5s;
+}
+
+.proposalcontainer .map .face.face1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.proposalcontainer .map:hover .face.face1 {
+  transform: translateY(0px);
+}
+
+.proposalcontainer .map .face.face2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: transparent;
+  transform: translateY(-100px);
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.proposalcontainer .map:hover .face.face2 {
+  transform: translateY(0px);
+  color: #707070;
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.proposalcontainer .map .face.face2 .content p {
+margin: 0;
+padding: 0;
+}
+
+.proposalcontainer .map .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #707070;
+  padding: 5px;
+}
+
+.proposalcontainer .map .face.face1 .content {
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.proposalcontainer .map:hover .face.face1 .content {
+  opacity: 1;
+}
+.proposalcontainer .map .face.face1 .content img{
+max-width: 250px;
+}
+
+.proposalcontainer .map .face.face1 .content h3{
+  margin: 10px 0 0 10px;
+  padding: 0;
+  color: #707070;
+  text-align: center;
+  font-size: 1.5em;
+  }
 
 /* Internship styles*/
 .internship-contents{
