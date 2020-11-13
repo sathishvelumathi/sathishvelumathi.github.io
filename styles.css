@@ -522,9 +522,6 @@ max-width: 250px;
   }
   
   .slidebar1-text {
-    padding: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
