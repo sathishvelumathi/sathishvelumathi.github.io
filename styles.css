@@ -319,11 +319,13 @@ opacity: 0.2;
 .sidebarbrief {
   opacity: 0;
   transition: 0.5s;
+  transform: translateY(-300px);
 }
 
 .sidebar1:hover .sidebarbrief,
 .sidebar2:hover .sidebarbrief {
   opacity: 1;
+  transform: translateY(0px);
 }
 
 .proposalcontainer .map {
