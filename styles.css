@@ -295,12 +295,25 @@ opacity: 0.2;
   margin: 30px 0 30px 0;
 }
 
-.text {
-  max-width: 500px;
+.sidebar1 .text,
+.sidebar2 .text {
+  max-width: 550px;
   justify-content: center;
   text-align: justify;
   padding: 0 10px 0 10px;
 }
+
+.sidebar1 .text p,
+.sidebar2 .text p{
+  color: transparent;
+  transition: 0.1s;
+}
+
+.sidebar1:hover .text p,
+.sidebar2:hover .text p {
+  color: #707070;
+}
+
 
 .proposalcontainer .map {
   position: relative;
