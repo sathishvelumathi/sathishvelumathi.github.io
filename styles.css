@@ -317,13 +317,13 @@ opacity: 0.2;
 }
 
 .sidebarbrief {
-  color: transparent;
+  opacity: 0;
   transition: 0.5s;
 }
 
 .sidebar1:hover .sidebarbrief,
 .sidebar2:hover .sidebarbrief {
-  color: #707070;
+  opacity: 1;
 }
 
 .proposalcontainer .map {
