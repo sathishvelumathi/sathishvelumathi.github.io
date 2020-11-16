@@ -295,25 +295,32 @@ opacity: 0.2;
   margin: 30px 0 30px 0;
 }
 
-.sidebar1 .text,
-.sidebar2 .text {
+.text {
   max-width: 550px;
   justify-content: center;
   text-align: justify;
   padding: 0 10px 0 10px;
 }
 
-.sidebar1 .text p,
-.sidebar2 .text p{
+.text .pie {
+  transform: translateY(100px);
+  transition: 0.5s;
+}
+
+.sidebar1:hover .text .pie,
+.sidebar2:hover .text .pie {
+  transform: translateY(0px);
+}
+
+.sidebarbrief {
   color: transparent;
   transition: 0.1s;
 }
 
-.sidebar1:hover .text p,
-.sidebar2:hover .text p {
+.sidebar1:hover .sidebarbrief,
+.sidebar2:hover .sidebarbrief {
   color: #707070;
 }
-
 
 .proposalcontainer .map {
   position: relative;
