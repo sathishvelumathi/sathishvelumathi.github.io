@@ -130,10 +130,6 @@ grid-area: wrapper;
   align-items: center;
 }
 
-.bamboo-grid {
-  width: 1200px;
-}
-
 /* .education p {
   text-indent: 10px;
 } */
@@ -267,7 +263,7 @@ opacity: 0.2;
 .timelinecontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
 
 .contextcontainer {
