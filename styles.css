@@ -296,6 +296,20 @@ opacity: 0.2;
   grid-template-rows: 1fr;
 }
 
+.zonegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 975px;
+  grid-gap: 30px;
+  margin: 0 30px 0 30px;
+  transition: 0.5s;
+}
+
+.contextcontainer:hover .zonegrid {
+  grid-template-rows: 1fr;
+}
+
+
 .sitecontext {
   display: flex;
   flex-direction: column;
@@ -335,6 +349,14 @@ opacity: 0.2;
   transition: 0.5s;
 }
 .contextcontainer:hover .imgbottom {
+  transform: translateY(0px);
+}
+
+.zimgbottom {
+  transform: translateY(-150px);
+  transition: 0.5s;
+}
+.contextcontainer:hover .zimgbottom {
   transform: translateY(0px);
 }
 
