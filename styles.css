@@ -269,6 +269,7 @@ opacity: 0.2;
 
 .contextcontainer {
  text-align: center;
+ padding: 0 30px 0 30px;
 }
 
 .contextgrid {
@@ -276,7 +277,7 @@ opacity: 0.2;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 500px;
   grid-gap: 30px;
-  margin: 0 30px 30px 30px;
+  margin: 0 0 30px 0;
   transition: 0.3s;
 }
 
@@ -291,6 +292,9 @@ opacity: 0.2;
   grid-gap: 30px;
   margin: 0 30px 0 30px;
   transition: 0.3s;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 .contextcontainer:hover .sitegrid {
