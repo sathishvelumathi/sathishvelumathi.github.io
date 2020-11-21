@@ -147,7 +147,7 @@ grid-area: wrapper;
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
-  padding: 30px 30px 0 30px;
+  padding: 30px 0 0 0;
 }
 
 
@@ -264,6 +264,7 @@ opacity: 0.2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  margin: 0 30px 0 30px;
 }
 
 .contextcontainer {
@@ -276,7 +277,7 @@ opacity: 0.2;
   grid-template-rows: 500px;
   grid-gap: 30px;
   margin: 0 30px 30px 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contextcontainer:hover .contextgrid {
@@ -289,7 +290,7 @@ opacity: 0.2;
   grid-template-rows: 600px;
   grid-gap: 30px;
   margin: 0 30px 0 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contextcontainer:hover .sitegrid {
@@ -302,13 +303,20 @@ opacity: 0.2;
   grid-template-rows: 975px;
   grid-gap: 30px;
   margin: 0 30px 0 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contextcontainer:hover .zonegrid {
   grid-template-rows: 1fr;
 }
 
+.contextcontainer .sitecontext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+}
 
 .sitecontext {
   display: flex;
@@ -320,7 +328,7 @@ opacity: 0.2;
   text-align: justify;
   color: transparent;
   transform: translateY(-200px);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contextcontainer:hover .txt {
@@ -335,7 +343,7 @@ opacity: 0.2;
 
 .imgtop {
   transform: translateY(100px);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .contextcontainer:hover .imgtop {
   transform: translateY(0px);
@@ -346,7 +354,7 @@ opacity: 0.2;
 
 .imgbottom {
   transform: translateY(-250px);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .contextcontainer:hover .imgbottom {
   transform: translateY(0px);
@@ -354,7 +362,7 @@ opacity: 0.2;
 
 .zimgbottom {
   transform: translateY(-150px);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .contextcontainer:hover .zimgbottom {
   transform: translateY(0px);
@@ -657,14 +665,15 @@ max-width: 250px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center;
+    align-content: center; */
     align-items: center;
     text-align: justify;
   }
 
   .slidebar1-text h2,
   .slidebar1-text h4{
+    align-items: center;
     text-align: center;
   }
 
@@ -675,7 +684,8 @@ max-width: 250px;
   }
 
   .slidebar1-text p {
-    color: #707070;  
+    color: #404040; 
+    font-weight: 300; 
   } 
 
   /* .bamboo-gallery {
