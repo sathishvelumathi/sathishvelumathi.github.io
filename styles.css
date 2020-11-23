@@ -305,7 +305,7 @@ opacity: 0.2;
   align-items: center;
   position: relative;
   width: 350px;
-  height: 420px;
+  height: 750px;
   margin: 0 15px 0 15px;
   transition: 0.3s;
 }
@@ -316,7 +316,7 @@ opacity: 0.2;
   align-items: center;
   position: relative;
   width: 350px;
-  height: 450px;
+  height: 770px;
   margin: 0 15px 0 15px;
   transition: 0.3s;
 }
@@ -332,28 +332,12 @@ opacity: 0.2;
   transition: 0.3s;
 }
 
-.contextcontainer1 .txt,
-.contextcontainer2 .txt {
-  text-align: justify;
-  color: #707070;
-  font-weight: lighter;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.contextcontainer3 .txt {
+.txt {
   text-align: justify;
   color: #707070;
   font-weight: lighter;
 }
 
-
-.contextcontainer1:hover .txt,
-.contextcontainer2:hover .txt {
-  color: #707070;
-  transform: translateY(0px);
-  opacity: 1;
-}
 
 .timelinecontainer:hover .txt {
   color: #707070;
@@ -364,40 +348,6 @@ opacity: 0.2;
 .timelinecontainer:hover .timelinecontext {
   height: 400px;
 } 
-
-.contextcontainer1:hover .sitecontext {
-  height: 750px;
-}
-
-.contextcontainer2:hover .sitecontext {
-  height: 770px;
-}
-
-/* .imgtop {
-  transform: translateY(100px);
-  transition: 0.3s;
-}
-.contextcontainer1:hover .imgtop {
-  transform: translateY(0px);
-}
-.timelinecontainer:hover .imgtop {
-  transform: translateY(0px);
-} */
-
-.contextcontainer1 .imgbottom {
-  transform: translateY(-340px);
-  transition: 0.3s;
-}
-
-.contextcontainer2 .imgbottom {
-  transform: translateY(-300px);
-  transition: 0.3s;
-}
-
-.contextcontainer1:hover .imgbottom,
-.contextcontainer2:hover .imgbottom {
-  transform: translateY(0px);
-}
 
 /* Katpadi styles */
 
@@ -658,8 +608,8 @@ max-width: 250px;
   
   .slidebar1 {
     margin: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .background-1 {
     max-width: 100%;
