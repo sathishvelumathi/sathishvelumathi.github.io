@@ -269,15 +269,15 @@ opacity: 0.2;
 
 .contextcontainer {
  text-align: center;
- padding: 0 30px 0 30px;
+ margin: 30px;
 }
 
 .contextgrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px;
+  grid-template-rows: 550px;
   grid-gap: 30px;
-  margin: 0 0 30px 0;
+  /* margin: 0 30px 30px 30px; */
   transition: 0.3s;
 }
 
@@ -306,7 +306,7 @@ opacity: 0.2;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 975px;
   grid-gap: 30px;
-  margin: 0 30px 0 30px;
+  /* margin: 0 30px 0 30px; */
   transition: 0.3s;
 }
 
@@ -326,6 +326,7 @@ opacity: 0.2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .txt {
@@ -357,7 +358,7 @@ opacity: 0.2;
 }
 
 .imgbottom {
-  transform: translateY(-250px);
+  transform: translateY(-230px);
   transition: 0.3s;
 }
 .contextcontainer:hover .imgbottom {
