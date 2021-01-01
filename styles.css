@@ -623,6 +623,16 @@ max-width: 250px;
     z-index: -1;
   }
   
+  .momento360° {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
   .slidebar1-text {
     position: relative;
     display: flex;
